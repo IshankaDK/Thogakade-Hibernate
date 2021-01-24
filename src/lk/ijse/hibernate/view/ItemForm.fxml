@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="641.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.ItemFormController">
+   <children>
+      <Label layoutX="209.0" layoutY="29.0" text="Item Form" textFill="RED">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCode" layoutX="50.0" layoutY="110.0" prefHeight="37.0" prefWidth="277.0" promptText="Item Code" />
+      <JFXTextField fx:id="txtDescription" layoutX="50.0" layoutY="173.0" prefHeight="37.0" prefWidth="277.0" promptText="Description" />
+      <JFXTextField fx:id="txtQty" layoutX="50.0" layoutY="231.0" prefHeight="37.0" prefWidth="277.0" promptText="Qty On Hand" />
+      <JFXTextField fx:id="txtPrice" layoutX="50.0" layoutY="293.0" prefHeight="37.0" prefWidth="277.0" promptText="Price" />
+      <JFXTextField fx:id="txtSearch" layoutX="50.0" layoutY="361.0" prefHeight="37.0" prefWidth="277.0" promptText="Search" />
+      <JFXButton fx:id="btnSave" layoutX="369.0" layoutY="116.0" onAction="#btnSaveOnAction" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: #1abc9c;" text="Save" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="369.0" layoutY="181.0" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: #1abc9c;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="369.0" layoutY="250.0" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: #1abc9c;" text="Update" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSearch" layoutX="370.0" layoutY="361.0" onAction="#btnSearchOnAction" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: #1abc9c;" text="Search" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tblItem" layoutX="50.0" layoutY="422.0" prefHeight="195.0" prefWidth="451.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="75.0" text="Code" />
+          <TableColumn fx:id="colDescription" prefWidth="155.0" text="Description" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="116.0" text="Qty On Hand" />
+            <TableColumn fx:id="colPrice" prefWidth="103.0" text="Price" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="33.0" layoutY="36.0" onAction="#btnBackOnAction" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #c0392b;" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

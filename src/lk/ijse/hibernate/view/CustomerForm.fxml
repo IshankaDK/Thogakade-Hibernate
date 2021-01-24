@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="546.0" prefWidth="537.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.CustomerController">
+   <children>
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="61.0" layoutY="147.0" prefHeight="26.0" prefWidth="241.0" promptText="Customer Name" />
+      <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="61.0" layoutY="206.0" prefHeight="26.0" prefWidth="241.0" promptText="Customer Address" />
+      <JFXButton fx:id="btnSave" layoutX="384.0" layoutY="95.0" onAction="#btnSaveOnAction" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #27ae60;" text="Save" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="384.0" layoutY="146.0" onAction="#btnUpdateOnAction" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #27ae60;" text="Update" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="384.0" layoutY="201.0" onAction="#btnDeleteOnAction" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #27ae60;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSearch" layoutX="384.0" layoutY="257.0" onAction="#btnSearchOnAction" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #27ae60;" text="Search" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="61.0" layoutY="261.0" prefHeight="26.0" prefWidth="241.0" promptText="Search" />
+      <TableView fx:id="tblCustomer" layoutX="82.0" layoutY="318.0" prefHeight="200.0" prefWidth="353.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="119.0" text="Id" />
+          <TableColumn fx:id="colName" minWidth="0.0" prefWidth="113.0" text="Name" />
+            <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="120.0" text="Address" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtCustomerId" labelFloat="true" layoutX="62.0" layoutY="99.0" prefHeight="26.0" prefWidth="241.0" promptText="Customer Id" />
+      <Label layoutX="146.0" layoutY="14.0" text="Customer Form" textFill="#e80202">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="37.0" layoutY="25.0" onAction="#btnBackOnAction" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #c0392b;" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
